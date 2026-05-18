@@ -297,7 +297,7 @@ export default function App() {
       formData.append("resume", file);
       formData.append("jobRole", jobRole || "Software Engineer");
       const { data } = await axios.post(
-        `${import.meta.env.VITE_API_URL}/api/analyze`,
+        `${import.meta.env.VITE_API_URL}api/analyze`,
         formData,
         { headers: { "Content-Type": "multipart/form-data" } },
       );
